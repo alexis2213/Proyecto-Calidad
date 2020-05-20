@@ -292,6 +292,35 @@ function requestScheduleAdministrative() {
    
 }
 
+function Login($mail){
+
+    // Create connection
+    $conn = new mysqli($servername, $username, $password, $dbname);
+    // Check connection
+    if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+    }
+
+    $sql = "SELECT Contraseña FROM usuarios WHERE email = $mail";
+    $result = $conn->query($sql);
+    
+    if ($result->num_rows > 0) {
+    
+        $row = mysqli_fetch_array($result);
+        $password= $row['Contraseña'];
+
+    }else{
+        echo "unknown user";
+        $conn->close(); 
+        return;
+
+    }
+
+    $conn->close(); 
+    return $password;
+
+}
+
     
 
 ?>
