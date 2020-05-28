@@ -1,0 +1,113 @@
+body,html {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../Imagenes/edificio_central4.jpg");
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+h2{
+	font-size:36px;
+}
+
+
+nav{
+	background-color: rgba(16, 51, 81, 0.3);
+	
+}
+nav .brand-logo{
+	font-size: 24px;
+	padding-left: 27px;
+}
+
+.container{
+	background: #FFFFFF;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 10px; 
+	position: absolute;
+	width: 769px;
+	height: 662px;
+	left: 516px;
+	top: 202px;
+
+}
+
+#password,#email{
+	width: 50%;
+}
+.active{
+color:blue !important;
+border-bottom: blue;
+}
+
+.input-field:active{
+	border-bottom: blue;
+}
+
+#contenedorlogin{
+	text-align: center;
+}
+
+#contenedorlogin img{
+	
+	top: 100px;
+
+	text-align: center;
+	border-radius: 70%;
+}
+.input-field.col label {
+    left: 200px;
+    font-size: 14px;
+}
+
+
+button{
+position: absolute;
+width: 379px;
+height: 32px;
+left: 195px;
+font-size: 18px;
+color: #FFFFFF;
+font-family: Roboto;
+
+font-weight: 200;
+text-align: center;
+line-height: 10px;
+
+background: #7EB6D1;
+border-radius: 15px
+}
+
+#divBoton label{
+	top: 250px;
+}
+
+h6{
+	font-size: .875rem;
+    line-height: 110%;
+    /* margin: .7666666667rem 0 .46rem 0; */
+    padding: 40px;
+    margin-left: -150px;
+}
+
+#divRecuperar{
+	margin-top: 50px;
+}
+#divRecuperar a{
+	position: absolute;
+    top: 498px;
+    left: 420px;
+    /* padding-bottom: 100px; */
+    font-size: 12px;
+}
+
+#Rectangulo{
+	position: absolute;
+width: 769px;
+height: 25px;
+
+top: 640px;
+
+background-color: #142134;
+border-radius: 0px 0px 5px 5px;
+}
